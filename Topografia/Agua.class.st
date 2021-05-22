@@ -3,3 +3,8 @@ Class {
 	#superclass : #Elemento,
 	#category : #Topografia
 }
+
+{ #category : #accessing }
+Agua >> valor [
+^1
+]
