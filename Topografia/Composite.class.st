@@ -1,5 +1,13 @@
 Class {
 	#name : #Composite,
-	#superclass : #Object,
+	#superclass : #Topografia,
+	#instVars : [
+		'elementos'
+	],
 	#category : #Topografia
 }
+
+{ #category : #initialization }
+Composite >> initialize [ 
+elementos:=OrderedCollection new.
+]

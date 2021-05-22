@@ -1,5 +1,5 @@
 Class {
 	#name : #Tierra,
-	#superclass : #Elements,
+	#superclass : #Elemento,
 	#category : #Topografia
 }

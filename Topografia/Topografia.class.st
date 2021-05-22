@@ -1,5 +1,5 @@
 Class {
-	#name : #Component,
+	#name : #Topografia,
 	#superclass : #Object,
 	#category : #Topografia
 }
