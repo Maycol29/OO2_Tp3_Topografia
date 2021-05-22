@@ -1,5 +1,5 @@
 Class {
 	#name : #Agua,
-	#superclass : #Object,
+	#superclass : #Elements,
 	#category : #Topografia
 }
