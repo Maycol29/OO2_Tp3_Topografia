@@ -2,27 +2,27 @@ Class {
 	#name : #Composite,
 	#superclass : #Topografia,
 	#instVars : [
-		'elementos'
+		'topografias'
 	],
 	#category : #Topografia
 }
 
 { #category : #adding }
 Composite >> agregarElemento:unElemento [
-elementos add:unElemento 
+topografias add:unElemento 
 ]
 
 { #category : #initialization }
 Composite >> initialize [ 
-elementos:=OrderedCollection new.
+topografias:=OrderedCollection new.
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 Composite >> proporcionAgua [
-	^ ((elementos sumNumbers:  [ :elemento | elemento valor ]) / 4)
+	^ topografias sumNumbers: [ :topografia | topografia proporcionAgua ] / 4
 ]
 
-{ #category : #'as yet unclassified' }
-Composite >> proporcionTierra [
-	^ 1 - self proporcionAgua
+{ #category : #accessing }
+Composite >> proporcionTierra [ 
+	^ 1-self proporcionAgua .
 ]

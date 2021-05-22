@@ -5,6 +5,11 @@ Class {
 }
 
 { #category : #accessing }
-Tierra >> valor [
+Tierra >> proporcionAgua [
 ^0
+]
+
+{ #category : #accessing }
+Tierra >> proporcionTierra [
+^1
 ]

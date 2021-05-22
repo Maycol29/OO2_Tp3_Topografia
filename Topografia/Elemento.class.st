@@ -3,8 +3,3 @@ Class {
 	#superclass : #Topografia,
 	#category : #Topografia
 }
-
-{ #category : #accessing }
-Elemento >> valor [
-self subclassResponsibility .
-]
