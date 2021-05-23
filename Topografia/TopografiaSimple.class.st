@@ -15,6 +15,11 @@ self subclassResponsibility .
 ]
 
 { #category : #accessing }
+TopografiaSimple >> proporcionProductiva [
+	self subclassResponsibility
+]
+
+{ #category : #accessing }
 TopografiaSimple >> proporcionTierra [ 
 self subclassResponsibility 
 ]

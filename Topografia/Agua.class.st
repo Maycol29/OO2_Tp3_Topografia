@@ -6,10 +6,20 @@ Class {
 
 { #category : #accessing }
 Agua >> proporcionAgua [
-^1
+	^ 1
 ]
 
 { #category : #accessing }
-Agua >> proporcionTierra [ 
-^0
+Agua >> proporcionDesperdicio [
+	^ 0.15
+]
+
+{ #category : #accessing }
+Agua >> proporcionProductiva [
+	^ 0
+]
+
+{ #category : #accessing }
+Agua >> proporcionTierra [
+	^ 0
 ]

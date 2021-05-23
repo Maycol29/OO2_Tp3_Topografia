@@ -1,20 +1,20 @@
 Class {
-	#name : #Tierra,
+	#name : #Pantano,
 	#superclass : #TopografiaSimple,
 	#category : #Topografia
 }
 
 { #category : #accessing }
-Tierra >> proporcionAgua [
-	^ 0
+Pantano >> proporcionAgua [
+	^ 0.7
 ]
 
 { #category : #accessing }
-Tierra >> proporcionProductiva [
-	^ 0.9
+Pantano >> proporcionProductiva [
+	^ 0.5
 ]
 
 { #category : #accessing }
-Tierra >> proporcionTierra [
-	^ 1
+Pantano >> proporcionTierra [
+	^ 0.3
 ]

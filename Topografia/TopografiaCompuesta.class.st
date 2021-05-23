@@ -23,12 +23,23 @@ TopografiaCompuesta >> initialize [
 topografias:=OrderedCollection new.
 ]
 
-{ #category : #accessing }
-TopografiaCompuesta >> proporcionAgua [
-	^ topografias sumNumbers: [ :topografia | topografia proporcionAgua ] / 4
+{ #category : #private }
+TopografiaCompuesta >> proporcion: aBlock [
+	^ (topografias sumNumbers: [ :topografia | aBlock value: topografia ])
+		/ 4
 ]
 
 { #category : #accessing }
-TopografiaCompuesta >> proporcionTierra [ 
-	^ 1-self proporcionAgua .
+TopografiaCompuesta >> proporcionAgua [
+	^ self proporcion: [ :it | it proporcionAgua ]
+]
+
+{ #category : #accessing }
+TopografiaCompuesta >> proporcionProductiva [
+	^ self proporcion: [ :it | it proporcionProductiva ]
+]
+
+{ #category : #accessing }
+TopografiaCompuesta >> proporcionTierra [
+	^ self proporcion: [ :it | it proporcionTierra ]
 ]
