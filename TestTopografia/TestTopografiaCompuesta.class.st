@@ -50,7 +50,7 @@ ord add:el2.
 { #category : #tests }
 TestTopografiaCompuesta >> testAgregarElemento [
 self assert:(comp3 topografias size) equals:4.
-self assert:(comp2 topografias size) equals:4.
+
 ]
 
 { #category : #tests }
