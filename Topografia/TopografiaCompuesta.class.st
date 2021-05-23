@@ -15,7 +15,7 @@ topografias add:unElemento
 { #category : #'as yet unclassified' }
 TopografiaCompuesta >> convertirTopografiaACollection [
 
-^topografias addAll: [:topo | topo convertirTopografiaACollection ]
+^topografias flatCollect:  [:topo | topo convertirTopografiaACollection ]
 ]
 
 { #category : #initialization }

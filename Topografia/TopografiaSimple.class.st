@@ -6,5 +6,5 @@ Class {
 
 { #category : #accessing }
 TopografiaSimple >> convertirTopografiaACollection [
-^self
+	^ self asOrderedCollection
 ]
