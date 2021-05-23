@@ -1,10 +1,10 @@
 Class {
-	#name : #Elemento,
+	#name : #TopografiaSimple,
 	#superclass : #Topografia,
 	#category : #Topografia
 }
 
 { #category : #accessing }
-Elemento >> convertirTopografiaACollection [
+TopografiaSimple >> convertirTopografiaACollection [
 ^self
 ]

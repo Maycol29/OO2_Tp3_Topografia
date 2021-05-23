@@ -1,6 +1,6 @@
 Class {
 	#name : #Agua,
-	#superclass : #Elemento,
+	#superclass : #TopografiaSimple,
 	#category : #Topografia
 }
 

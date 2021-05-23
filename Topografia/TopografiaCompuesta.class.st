@@ -1,5 +1,5 @@
 Class {
-	#name : #Composite,
+	#name : #TopografiaCompuesta,
 	#superclass : #Topografia,
 	#instVars : [
 		'topografias'
@@ -8,27 +8,27 @@ Class {
 }
 
 { #category : #adding }
-Composite >> agregarElemento:unElemento [
+TopografiaCompuesta >> agregarElemento:unElemento [
 topografias add:unElemento 
 ]
 
 { #category : #'as yet unclassified' }
-Composite >> convertirTopografiaACollection [
+TopografiaCompuesta >> convertirTopografiaACollection [
 
 ^topografias addAll: [:topo | topo convertirTopografiaACollection ]
 ]
 
 { #category : #initialization }
-Composite >> initialize [ 
+TopografiaCompuesta >> initialize [ 
 topografias:=OrderedCollection new.
 ]
 
 { #category : #accessing }
-Composite >> proporcionAgua [
+TopografiaCompuesta >> proporcionAgua [
 	^ topografias sumNumbers: [ :topografia | topografia proporcionAgua ] / 4
 ]
 
 { #category : #accessing }
-Composite >> proporcionTierra [ 
+TopografiaCompuesta >> proporcionTierra [ 
 	^ 1-self proporcionAgua .
 ]

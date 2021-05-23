@@ -1,6 +1,6 @@
 Class {
 	#name : #Tierra,
-	#superclass : #Elemento,
+	#superclass : #TopografiaSimple,
 	#category : #Topografia
 }
 
