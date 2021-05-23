@@ -5,12 +5,6 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-Topografia >> comparacion: unaTopografia [
-|col col1|
-col = col1.
-]
-
-{ #category : #'as yet unclassified' }
 Topografia >> convertirTopografiaACollection [
 self subclassResponsibility 
 ]
@@ -23,4 +17,10 @@ self subclassResponsibility .
 { #category : #accessing }
 Topografia >> proporcionTierra [ 
 self subclassResponsibility 
+]
+
+{ #category : #'as yet unclassified' }
+Topografia >> sonIguales: unaTopografia [
+	^ self convertirTopografiaACollection
+		= unaTopografia convertirTopografiaACollection
 ]
