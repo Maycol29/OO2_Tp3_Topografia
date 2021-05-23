@@ -43,3 +43,8 @@ TopografiaCompuesta >> proporcionProductiva [
 TopografiaCompuesta >> proporcionTierra [
 	^ self proporcion: [ :it | it proporcionTierra ]
 ]
+
+{ #category : #accessing }
+TopografiaCompuesta >> topografias [
+^topografias 
+]
