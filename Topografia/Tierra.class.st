@@ -10,6 +10,11 @@ Tierra >> proporcionAgua [
 ]
 
 { #category : #accessing }
+Tierra >> proporcionDesperdicio [
+	^ 0.05
+]
+
+{ #category : #accessing }
 Tierra >> proporcionProductiva [
 	^ 0.9
 ]

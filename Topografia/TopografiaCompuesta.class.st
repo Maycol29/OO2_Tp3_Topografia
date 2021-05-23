@@ -35,6 +35,15 @@ TopografiaCompuesta >> proporcionAgua [
 ]
 
 { #category : #accessing }
+TopografiaCompuesta >> proporcionDesperdicio [
+	| desperdicio |
+	desperdicio := self proporcion: [ :it | it proporcionDesperdicio ].
+	desperdicio < 0.5
+		ifTrue: [ ^ desperdicio * 1.03 ].
+	^ desperdicio
+]
+
+{ #category : #accessing }
 TopografiaCompuesta >> proporcionProductiva [
 	^ self proporcion: [ :it | it proporcionProductiva ]
 ]
