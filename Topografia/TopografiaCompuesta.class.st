@@ -32,3 +32,8 @@ TopografiaCompuesta >> proporcionAgua [
 TopografiaCompuesta >> proporcionTierra [ 
 	^ 1-self proporcionAgua .
 ]
+
+{ #category : #accessing }
+TopografiaCompuesta >> topografias [
+^topografias 
+]

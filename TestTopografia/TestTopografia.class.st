@@ -39,7 +39,6 @@ comp1 agregarElemento:comp3.
 ]
 
 { #category : #tests }
-TestTopografia >> testConvertirTopografiaACollection [
-
-self assert:((comp1 convertirTopografiaACollection = comp2 convertirTopografiaACollection)equals:true) 
+TestTopografia >> testSonIguales [
+	self assert: comp1 convertirTopografiaACollection = comp2 convertirTopografiaACollection equals: true
 ]
