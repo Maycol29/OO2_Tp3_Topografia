@@ -12,6 +12,12 @@ Composite >> agregarElemento:unElemento [
 topografias add:unElemento 
 ]
 
+{ #category : #'as yet unclassified' }
+Composite >> convertirTopografiaACollection [
+
+^topografias addAll: [:topo | topo convertirTopografiaACollection ]
+]
+
 { #category : #initialization }
 Composite >> initialize [ 
 topografias:=OrderedCollection new.
