@@ -25,7 +25,8 @@ topografias:=OrderedCollection new.
 
 { #category : #accessing }
 TopografiaCompuesta >> proporcionAgua [
-	^ topografias sumNumbers: [ :topografia | topografia proporcionAgua ] / 4
+	^ (topografias
+		sumNumbers: [ :topografia | topografia proporcionAgua ]) / 4
 ]
 
 { #category : #accessing }
