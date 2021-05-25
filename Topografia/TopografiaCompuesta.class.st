@@ -8,8 +8,8 @@ Class {
 }
 
 { #category : #adding }
-TopografiaCompuesta >> agregarElemento:unElemento [
-topografias add:unElemento 
+TopografiaCompuesta >> agregarElemento:unaTopografia [ 
+topografias add:unaTopografia  
 ]
 
 { #category : #accessing }
