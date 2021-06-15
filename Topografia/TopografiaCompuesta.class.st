@@ -7,6 +7,12 @@ Class {
 	#category : #Topografia
 }
 
+{ #category : #'instance creation' }
+TopografiaCompuesta class >> newConTopografias:unaOrderedCollection [
+^self new initializeTopografia: unaOrderedCollection.
+
+]
+
 { #category : #adding }
 TopografiaCompuesta >> agregarElemento:unaTopografia [ 
 topografias add:unaTopografia  
@@ -21,6 +27,11 @@ TopografiaCompuesta >> convertirTopografiaACollection [
 { #category : #initialization }
 TopografiaCompuesta >> initialize [ 
 topografias:=OrderedCollection new.
+]
+
+{ #category : #initialization }
+TopografiaCompuesta >> initializeTopografia:unaOrderedCollection [
+topografias:=unaOrderedCollection.
 ]
 
 { #category : #private }
