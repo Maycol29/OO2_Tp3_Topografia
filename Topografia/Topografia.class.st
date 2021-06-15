@@ -36,5 +36,5 @@ self subclassResponsibility
 
 { #category : #accessing }
 Topografia >> sonIguales: unaTopografia [
-	^ self compararTopografias: unaTopografia 
+
 ]
