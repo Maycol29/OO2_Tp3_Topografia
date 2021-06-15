@@ -9,8 +9,10 @@ Class {
 
 { #category : #'instance creation' }
 TopografiaCompuesta class >> newConTopografias:unaOrderedCollection [
-^self new initializeTopografia: unaOrderedCollection.
-
+|instancia|
+instancia:=self new. 
+instancia initializeTopografia: unaOrderedCollection.
+^instancia.
 ]
 
 { #category : #adding }

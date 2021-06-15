@@ -4,7 +4,7 @@ Class {
 	#category : #Topografia
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 TopografiaSimple >> compararTopografias: unaTopografia [
 	^ self proporcionAgua = unaTopografia proporcionAgua
 ]
