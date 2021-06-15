@@ -4,6 +4,11 @@ Class {
 	#category : #Topografia
 }
 
+{ #category : #'as yet unclassified' }
+TopografiaSimple >> compararTopografias: unaTopografia [
+	^(self proporcionAgua = unaTopografia proporcionAgua) 
+]
+
 { #category : #accessing }
 TopografiaSimple >> convertirTopografiaACollection [
 	^ self asOrderedCollection
