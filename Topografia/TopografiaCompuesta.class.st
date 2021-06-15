@@ -21,7 +21,7 @@ topografias add:unaTopografia
 { #category : #'as yet unclassified' }
 TopografiaCompuesta >> compararTopografias: unaTopografia [
 
-	^self topografias allSatisfy: [:topo| topo compararTopografias: unaTopografia ].
+	^topografias allSatisfy: [:topo| topo compararTopografias: unaTopografia ].
 ]
 
 { #category : #accessing }

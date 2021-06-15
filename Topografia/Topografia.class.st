@@ -4,6 +4,11 @@ Class {
 	#category : #Topografia
 }
 
+{ #category : #'as yet unclassified' }
+Topografia >> compararTopografias: unaTopografia [ 
+self subclassResponsibility .
+]
+
 { #category : #accessing }
 Topografia >> convertirTopografiaACollection [
 self subclassResponsibility 
@@ -31,6 +36,5 @@ self subclassResponsibility
 
 { #category : #accessing }
 Topografia >> sonIguales: unaTopografia [
-	^ self convertirTopografiaACollection
-		= unaTopografia convertirTopografiaACollection
+	^ self compararTopografias: unaTopografia 
 ]
