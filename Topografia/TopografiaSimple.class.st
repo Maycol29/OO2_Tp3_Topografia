@@ -6,8 +6,6 @@ Class {
 
 { #category : #'as yet unclassified' }
 TopografiaSimple >> compararTopografias: unaTopografia [
-	unaTopografia class = 'TopografiaCompuesta'
-		ifTrue: [ ^ false ].
 	^ self proporcionAgua = unaTopografia proporcionAgua
 ]
 
