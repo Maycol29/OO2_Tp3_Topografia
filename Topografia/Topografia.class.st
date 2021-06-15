@@ -31,6 +31,12 @@ self subclassResponsibility
 
 { #category : #accessing }
 Topografia >> sonIguales: unaTopografia [
-	^ self convertirTopografiaACollection
-		= unaTopografia convertirTopografiaACollection
+	| col1 col2 |
+	col1 := self convertirTopografiaACollection.
+	col2 := unaTopografia convertirTopografiaACollection.
+	
+	col1 firstIndex to: col1 lastIndex do: [ :index | 
+		((col1 at: index) compararTopografias: (col2 at: index))
+			ifFalse: [ ^ false ] ].
+	^ true
 ]
