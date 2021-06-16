@@ -63,6 +63,20 @@ comp5:= TopografiaCompuesta newConTopografias: ord1
 ]
 
 { #category : #tests }
+TestTopografia >> testMismaDistribucion [
+self assert:(comp1 mismaDistribucion: comp2).
+self deny:(comp1 mismaDistribucion: comp5).
+self assert:(comp3 mismaDistribucion: comp4).
+]
+
+{ #category : #tests }
+TestTopografia >> testMismaProporcionAgua [
+	self assert:(comp3 mismaProporcionAgua: comp4).
+	self assert:(comp1 mismaProporcionAgua: comp2).
+	self deny:(comp1 mismaProporcionAgua: comp5).
+]
+
+{ #category : #tests }
 TestTopografia >> testSonIguales [
 	self assert:(el1 sonIguales: el3).
 	self assert: (comp3 sonIguales: comp4) .
