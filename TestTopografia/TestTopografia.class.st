@@ -13,7 +13,8 @@ Class {
 		'comp2',
 		'comp3',
 		'comp4',
-		'comp5'
+		'comp5',
+		'ord4'
 	],
 	#category : #TestTopografia
 }
@@ -27,34 +28,32 @@ el3:=Agua new.
 el4:=Tierra new.
 
 ord1:=OrderedCollection new.
-ord2:=OrderedCollection new.
-
 ord1 add:el1.
 ord1 add:el1.
 ord1 add:el1.
 ord1 add:el1.
-
-ord2 add:el3.
-ord2 add:el3.
-ord2 add:el3.
-ord2 add:el3.
-
 comp3:=TopografiaCompuesta newConTopografias: ord1.
 
+ord2:=OrderedCollection new.
+ord2 add:el3.
+ord2 add:el3.
+ord2 add:el3.
+ord2 add:el3.
 comp4:=TopografiaCompuesta newConTopografias: ord2.
 
+ord3:=OrderedCollection new.
+ord3 add:el3.
+ord3 add:el4.
+ord3 add:el4.
+ord3 add:comp3.
+comp2:=TopografiaCompuesta newConTopografias: ord3.
 
-comp2:=TopografiaCompuesta new.
-comp2 agregarElemento:el3.
-comp2 agregarElemento:el4.
-comp2 agregarElemento:el4.
-comp2 agregarElemento:comp3.
-
-comp1:=TopografiaCompuesta new.
-comp1 agregarElemento:el1.
-comp1 agregarElemento:el2.
-comp1 agregarElemento:el2.
-comp1 agregarElemento:comp4.
+ord4:=OrderedCollection new.
+ord4 add:el1.
+ord4 add:el2.
+ord4 add:el2.
+ord4 add:comp4.
+comp1:=TopografiaCompuesta newConTopografias: ord4.
 
 comp5:= TopografiaCompuesta newConTopografias: ord1 
 
