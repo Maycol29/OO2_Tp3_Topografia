@@ -19,10 +19,8 @@ Topografia >> mismaDistribucion:unaTopografia [
 	col1 size = col2 size
 		ifFalse: [ ^ false ].
 	
-	1 to: col1 size do: [ :index | 
-		((col1 at: index) compararTopografias: (col2 at: index))
-			ifFalse: [ ^ false ] ].
-	^ true
+	^(1 to: col1 size) allSatisfy: [ :index | 
+		((col1 at: index) compararTopografias: (col2 at: index))].
 ]
 
 { #category : #accessing }
