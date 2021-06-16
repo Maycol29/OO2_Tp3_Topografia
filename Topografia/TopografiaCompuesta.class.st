@@ -16,8 +16,8 @@ instancia initializeTopografia: unaOrderedCollection.
 ]
 
 { #category : #private }
-TopografiaCompuesta >> convertirTopografiaACollection [
-	^ topografias flatCollect: [ :topo | topo convertirTopografiaACollection ]
+TopografiaCompuesta >> compararConIgualClase: anObject [
+  ^ self topografias = anObject topografias
 ]
 
 { #category : #initialization }

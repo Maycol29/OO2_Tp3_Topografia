@@ -5,13 +5,8 @@ Class {
 }
 
 { #category : #private }
-TopografiaSimple >> compararTopografias: unaTopografia [
-	^ self proporcionAgua = unaTopografia proporcionAgua
-]
-
-{ #category : #private }
-TopografiaSimple >> convertirTopografiaACollection [
-	^ self asOrderedCollection
+TopografiaSimple >> compararConIgualClase: anObject [
+	^ true
 ]
 
 { #category : #accessing }

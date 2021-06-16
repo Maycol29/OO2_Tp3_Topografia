@@ -56,14 +56,6 @@ ord add:el2.
 ]
 
 { #category : #tests }
-TestTopografiaCompuesta >> testConvertirTopografiaACollection [
-
-self assert:comp3 convertirTopografiaACollection equals:ord.
-self deny:comp2 convertirTopografiaACollection equals:ord.
-self deny:comp1 convertirTopografiaACollection equals:ord.
-]
-
-{ #category : #tests }
 TestTopografiaCompuesta >> testProporcionAgua [
 self assert:comp3 proporcionAgua equals:0.5.
 self assert:comp1 proporcionAgua equals:0.375.

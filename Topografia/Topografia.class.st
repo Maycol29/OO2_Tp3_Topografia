@@ -4,33 +4,20 @@ Class {
 	#category : #Topografia
 }
 
-{ #category : #accessing }
-Topografia >> convertirTopografiaACollection [
-self subclassResponsibility 
+{ #category : #comparing }
+Topografia >> = anObject [
+    (self class  == anObject class) ifFalse:[ ^false].
+   ^ self compararConIgualClase: anObject.
 ]
 
 { #category : #private }
-Topografia >> mismaDistribucion:unaTopografia [ 
-|col1 col2|
-
-	col1 := self convertirTopografiaACollection.	
-	col2 := unaTopografia convertirTopografiaACollection.	
-	
-	col1 size = col2 size
-		ifFalse: [ ^ false ].
-	
-	^(1 to: col1 size) allSatisfy: [ :index | 
-		((col1 at: index) compararTopografias: (col2 at: index))].
-]
-
-{ #category : #private }
-Topografia >> mismaProporcionAgua: unaTopografia [
-	^ self proporcionAgua = unaTopografia proporcionAgua
+Topografia >> compararConIgualClase: anObject [
+	self subclassResponsibility
 ]
 
 { #category : #accessing }
 Topografia >> proporcionAgua [
-self subclassResponsibility .
+	self subclassResponsibility
 ]
 
 { #category : #accessing }
@@ -50,7 +37,5 @@ self subclassResponsibility
 
 { #category : #accessing }
 Topografia >> sonIguales: unaTopografia [
-	(self mismaProporcionAgua: unaTopografia)
-		ifFalse: [ ^ false ].
-	^ self mismaDistribucion: unaTopografia
+	^self = unaTopografia.
 ]

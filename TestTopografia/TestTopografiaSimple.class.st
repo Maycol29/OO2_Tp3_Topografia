@@ -26,9 +26,3 @@ self assert:(el3 compararTopografias: el1).
 
 
 ]
-
-{ #category : #tests }
-TestTopografiaSimple >> testConvertirTopografiaACollection [
-self assert:(el1 convertirTopografiaACollection)equals:el1 asOrderedCollection.
-self deny:(el2 convertirTopografiaACollection)equals:el1 asOrderedCollection 
-]
