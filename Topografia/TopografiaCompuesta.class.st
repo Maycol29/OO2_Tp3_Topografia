@@ -62,7 +62,7 @@ TopografiaCompuesta >> proporcionProductiva [
 
 { #category : #accessing }
 TopografiaCompuesta >> proporcionTierra [
-	^ 1 - self proporcion: [ :it | it proporcionAgua ]
+	^ 1 - (self proporcion: [ :it | it proporcionAgua ])
 ]
 
 { #category : #private }
