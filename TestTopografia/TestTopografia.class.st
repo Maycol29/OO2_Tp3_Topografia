@@ -75,7 +75,7 @@ TestTopografia >> testMismaProporcionAgua [
 	self assert:(comp3 mismaProporcionAgua: comp4).
 	self assert:(comp1 mismaProporcionAgua: comp2).
 	self deny:(comp1 mismaProporcionAgua: comp5).
-	self assert:(el1 mismaDistribucion: el3).
+	self assert:(el1 mismaProporcionAgua: el3).
 ]
 
 { #category : #tests }
