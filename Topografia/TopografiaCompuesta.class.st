@@ -20,10 +20,9 @@ TopografiaCompuesta >> agregarElemento:unaTopografia [
 topografias add:unaTopografia  
 ]
 
-{ #category : #accessing }
+{ #category : #private }
 TopografiaCompuesta >> convertirTopografiaACollection [
-
-^topografias flatCollect:  [:topo | topo convertirTopografiaACollection ]
+	^ topografias flatCollect: [ :topo | topo convertirTopografiaACollection ]
 ]
 
 { #category : #initialization }

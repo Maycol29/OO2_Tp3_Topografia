@@ -9,7 +9,7 @@ Topografia >> convertirTopografiaACollection [
 self subclassResponsibility 
 ]
 
-{ #category : #accessing }
+{ #category : #private }
 Topografia >> mismaDistribucion:unaTopografia [ 
 |col1 col2|
 
