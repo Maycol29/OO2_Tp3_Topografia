@@ -15,19 +15,9 @@ instancia initializeTopografia: unaOrderedCollection.
 ^instancia.
 ]
 
-{ #category : #adding }
-TopografiaCompuesta >> agregarElemento:unaTopografia [ 
-topografias add:unaTopografia  
-]
-
 { #category : #private }
 TopografiaCompuesta >> convertirTopografiaACollection [
 	^ topografias flatCollect: [ :topo | topo convertirTopografiaACollection ]
-]
-
-{ #category : #initialization }
-TopografiaCompuesta >> initialize [ 
-topografias:=OrderedCollection new.
 ]
 
 { #category : #initialization }

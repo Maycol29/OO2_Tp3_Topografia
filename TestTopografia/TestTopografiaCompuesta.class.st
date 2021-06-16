@@ -7,7 +7,10 @@ Class {
 		'comp1',
 		'comp2',
 		'comp3',
-		'ord'
+		'ord',
+		'ord2',
+		'ord3',
+		'ord4'
 	],
 	#category : #TestTopografia
 }
@@ -17,25 +20,30 @@ TestTopografiaCompuesta >> setUp [
 	"Hooks that subclasses may override to define the fixture of test."
 el1:=Agua new.
 el2 :=Tierra new.
+ord2:=OrderedCollection new.
+ord3:=OrderedCollection new.
+ord4:=OrderedCollection new.
 
-comp3:=TopografiaCompuesta new.
-comp3 agregarElemento:el1.
-comp3 agregarElemento:el1.
-comp3 agregarElemento:el2.
-comp3 agregarElemento:el2.
+ord2 add: el1.
+ord2 add:el1.
+ord2 add:el2.
+ord2 add:el2.
 
-comp2:=TopografiaCompuesta new.
-comp2 agregarElemento:el1.
-comp2 agregarElemento:el2.
-comp2 agregarElemento:el2.
-comp2 agregarElemento:comp3.
+comp3:=TopografiaCompuesta newConTopografias: ord2.
 
+ord3 add:el1.
+ord3 add:el2.
+ord3 add:el2.
+ord3 add:comp3.
 
-comp1:=TopografiaCompuesta new.
-comp1 agregarElemento:el1.
-comp1 agregarElemento:el2.
-comp1 agregarElemento:el2.
-comp1 agregarElemento:comp3.
+comp2:=TopografiaCompuesta newConTopografias: ord3.
+
+ord4 add:el1.
+ord4 add:el2.
+ord4 add:el2.
+ord4 add:comp3.
+
+comp1:=TopografiaCompuesta newConTopografias: ord4.
 
 ord:=OrderedCollection new.
 ord add:el1.
@@ -44,12 +52,6 @@ ord add:el2.
 ord add:el2.
 
 
-
-]
-
-{ #category : #tests }
-TestTopografiaCompuesta >> testAgregarElemento [
-self assert:(comp3 topografias size) equals:4.
 
 ]
 
