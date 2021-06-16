@@ -23,5 +23,5 @@ Pantano >> proporcionProductiva [
 
 { #category : #accessing }
 Pantano >> proporcionTierra [
-	^ 0.3
+	^ 1 - self proporcionAgua
 ]

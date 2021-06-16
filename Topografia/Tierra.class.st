@@ -21,5 +21,5 @@ Tierra >> proporcionProductiva [
 
 { #category : #accessing }
 Tierra >> proporcionTierra [
-	^ 1
+	^ 1 - self proporcionAgua
 ]

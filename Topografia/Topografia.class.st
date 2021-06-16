@@ -23,11 +23,9 @@ Topografia >> mismaDistribucion:unaTopografia [
 		((col1 at: index) compararTopografias: (col2 at: index))].
 ]
 
-{ #category : #accessing }
-Topografia >> mismaProporcionAgua:unaTopografia [ 
-^self proporcionAgua = unaTopografia proporcionAgua
-		
-
+{ #category : #private }
+Topografia >> mismaProporcionAgua: unaTopografia [
+	^ self proporcionAgua = unaTopografia proporcionAgua
 ]
 
 { #category : #accessing }
