@@ -63,10 +63,10 @@ TopografiaCompuesta >> proporcionProductiva [
 
 { #category : #accessing }
 TopografiaCompuesta >> proporcionTierra [
-	^ self proporcion: [ :it | it proporcionTierra ]
+	^ 1 - self proporcion: [ :it | it proporcionAgua ]
 ]
 
-{ #category : #accessing }
+{ #category : #private }
 TopografiaCompuesta >> topografias [
 ^topografias 
 ]

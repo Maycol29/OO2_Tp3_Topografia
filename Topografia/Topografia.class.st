@@ -9,7 +9,7 @@ Topografia >> convertirTopografiaACollection [
 self subclassResponsibility 
 ]
 
-{ #category : #accessing }
+{ #category : #private }
 Topografia >> mismaDistribucion:unaTopografia [ 
 |col1 col2|
 
@@ -25,11 +25,9 @@ Topografia >> mismaDistribucion:unaTopografia [
 	^ true
 ]
 
-{ #category : #accessing }
-Topografia >> mismaProporcionAgua:unaTopografia [ 
-^self proporcionAgua = unaTopografia proporcionAgua
-		
-
+{ #category : #private }
+Topografia >> mismaProporcionAgua: unaTopografia [
+	^ self proporcionAgua = unaTopografia proporcionAgua
 ]
 
 { #category : #accessing }
