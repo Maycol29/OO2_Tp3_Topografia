@@ -62,6 +62,13 @@ comp5:= TopografiaCompuesta newConTopografias: ord1
 ]
 
 { #category : #tests }
+TestTopografia >> testSimboloIgual [
+self assert:el1=el3.
+self deny:el1=comp1.
+self assert:comp3=comp4
+]
+
+{ #category : #tests }
 TestTopografia >> testSonIguales [
 	self assert:(el1 sonIguales: el3).
 	self assert: (comp3 sonIguales: comp4) .

@@ -7,6 +7,7 @@ Class {
 		'comp1',
 		'comp2',
 		'comp3',
+		'comp4',
 		'ord',
 		'ord2',
 		'ord3',
@@ -51,8 +52,16 @@ ord add:el1.
 ord add:el2.
 ord add:el2.
 
+comp4:=TopografiaCompuesta newConTopografias: ord
 
 
+
+]
+
+{ #category : #tests }
+TestTopografiaCompuesta >> testCompararConIgualClase [
+self assert:(comp3 compararConIgualClase: comp4).
+self assert:(comp1 compararConIgualClase: comp2).
 ]
 
 { #category : #tests }

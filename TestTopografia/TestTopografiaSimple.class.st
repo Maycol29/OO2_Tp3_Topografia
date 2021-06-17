@@ -16,13 +16,17 @@ el1:=Agua new.
 el2 :=Tierra new.
 el3:=Agua new.
 
+
 ]
 
 { #category : #tests }
-TestTopografiaSimple >> testCompararTopografias [
-self assert:(el1 compararTopografias: el3).
-self deny:(el2 compararTopografias: el3).
-self assert:(el3 compararTopografias: el1).
+TestTopografiaSimple >> testProporcionAgua [
+	self assert: el1 proporcionAgua equals: 1.
+	self assert: el2 proporcionAgua equals: 0
+]
 
-
+{ #category : #tests }
+TestTopografiaSimple >> testProporcionTierra [
+	self assert: el2 proporcionTierra equals: 1.
+	self assert: el1 proporcionTierra equals: 0
 ]
